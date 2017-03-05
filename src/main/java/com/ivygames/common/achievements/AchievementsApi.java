@@ -17,8 +17,7 @@ public class AchievementsApi {
     @NonNull
     private final AchievementsResultCallback mAchievementsLoadCallback;
 
-    public AchievementsApi(@NonNull AchievementsSettings settings,
-                           @NonNull ApiClient apiClient) {
+    public AchievementsApi(@NonNull ApiClient apiClient, @NonNull AchievementsSettings settings) {
         mSettings = new AchievementsSettingsWrapper(settings);
         mApiClient = apiClient;
         AchievementsLoadListener listener = new AchievementsLoadListener(apiClient, mSettings);
