@@ -29,7 +29,7 @@ public class TurnTimerControllerTest {
     private TurnListener listener;
 
     @Before
-    public void setup() {
+    public void setUp() {
         MockitoAnnotations.initMocks(this);
 
         when(factory.newTimer(anyInt(), any(TimerListener.class))).thenReturn(timer);

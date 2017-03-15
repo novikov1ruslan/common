@@ -26,7 +26,7 @@ public class AchievementsLoadListenerTest {
     private AchievementsSettings settings;
 
     @Before
-    public void setup() {
+    public void setUp() {
         MockitoAnnotations.initMocks(this);
         listener = new AchievementsLoadListener(apiClient, settings);
     }
