@@ -42,11 +42,6 @@ public class AndroidDevice {
         return false;
     }
 
-    public boolean isWifiConnected() {
-        ConnectivityManager connManager = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
-        return connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).isConnected();
-    }
-
     public boolean canResolveIntent(@NonNull Intent intent) {
         PackageManager pm = mContext.getPackageManager();
         List<ResolveInfo> resolveInfo = pm.queryIntentActivities(intent, 0);
