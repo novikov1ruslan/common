@@ -12,6 +12,12 @@ import org.commons.logger.Ln;
 
 public class PurchaseManager {
 
+    /**
+     * base64EncodedPublicKey should be YOUR APPLICATION'S PUBLIC KEY (that you got from the Google Play developer console). This is not your developer public
+ 	 * key, it's the *app-specific* public key.
+ 	 */
+    public static String BASE64_ENCODED_PUBLIC_KEY;
+
     @NonNull
     private final Activity mActivity;
     private final int mRequestCode;
